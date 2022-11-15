@@ -11,4 +11,7 @@ class Super(models.Model):
     catchphrase = models.CharField(max_length=255)
     super_type = models.ForeignKey(SuperType, on_delete=models.CASCADE)
 
+class Power(models.Model):
+    name = models.CharField(max_length=255)
+
 
